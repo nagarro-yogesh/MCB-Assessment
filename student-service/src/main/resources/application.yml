@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  shutdown: graceful
+spring:  profiles: local
+  flyway:
+    clean-disabled: true
+    enabled: true
+#  datasource:#    driver-class-name: org.mariadb.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/mcb?createDatabaseIfNotExist=true&serverTimeZone=UTC&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+#    username: root
+#    password: account
+#  datasource:
+#    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:mem:mcb
+#    username: sa
+#    password: account@123
+#  h2:#    console:#      enabled: true
+logging:
+  level:    root: info
+    org:
+      flywaydb: info
+     
